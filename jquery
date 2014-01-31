@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Index</title>
+</head>
+
+<body>
+
+<select id="selectopt">
+<option value="Type1">Type1</option>
+<option value="Type2">Type2</option>
+<option value="Type3">Type3</option>
+<option value="Type4">Type4</option>
+</select>
+
+<input type="text" id="txtbox">
+
+<input type="text" id="txtbox2">
+<p></p>
+</body>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$("#selectopt").change(function(){
+		var sel = $("#selectopt").val();
+		$("#txtbox").append(sel);
+		
+		
+	})
+	
+	$("#txtbox2").change(function(){
+		
+		var txt = $("#txtbox2").val();
+		$("p").append(txt);
+		
+		
+	});
+    
+});
+</script>
+
+<script type="text/javascript">
+
+var cat = prompt("What is your fav color");
+
+switch(cat){
+	case 1:
+	
+}
+</script>
+</html>
